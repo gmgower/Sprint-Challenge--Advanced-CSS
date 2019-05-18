@@ -9,7 +9,7 @@
 }
 
 // Parametric Mixins
-.custom-signup-btn() {
+.custom-signup-btn(@width: 12rem, @bgColor: @btn-bg-color) {
   display: block;
   padding-top: 1rem;
   text-align: center;
@@ -17,7 +17,7 @@
   height: 45px;
   font-size: 2rem;
   border-radius: 1.2rem;
-  width: 20rem;
-  background-color: red;
-  color: blue;
+  width: @width;
+  background-color: @bgColor;
+  color: @sea-shell;
 }

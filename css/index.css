@@ -248,9 +248,9 @@ footer {
   height: 45px;
   font-size: 2rem;
   border-radius: 1.2rem;
-  width: 20rem;
-  background-color: red;
-  color: blue;
+  width: 12rem;
+  background-color: #22283A;
+  color: #F1F1F1;
 }
 .home .walk .walk-img {
   width: 46%;
