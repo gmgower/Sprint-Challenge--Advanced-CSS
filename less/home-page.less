@@ -2,6 +2,8 @@
 
 .home {
 
+    // < !-- Start of Intro Section -->
+
   .intro {
 
     h2 {
@@ -11,9 +13,10 @@
     p {
       padding: 0 15px;
     }
-
   }
+    // < !-- End of Intro Section -->
 
+  //  < !-- Start of Space Image Section -->
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +41,9 @@
       }
     }
   }
+    // < !-- End of Space Image Section -->
 
+  //  < !-- Start of Visit Planets Section -->
   .visit-planets {
     padding: 15px;
 
@@ -50,7 +55,9 @@
       margin-top: 13px;
     }
   }
+  //  < !-- End of Visit Planets Section -->
 
+  //  < !-- Start of Walk Section -->
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
@@ -60,6 +67,10 @@
     @media @phone {
       display: flex;
       flex-direction: column;
+      padding: 1px 1px;
+      align-content: center;
+      margin-top: 2rem;
+      border-top: 1px solid @main-border-color;
     }
 
     .walk-text {
@@ -108,6 +119,6 @@
       }
     }
   }
-}
+  //  < !-- End of Walk Section -->
 
-// home
+}// home

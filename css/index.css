@@ -244,6 +244,10 @@ footer {
   .home .walk {
     display: flex;
     flex-direction: column;
+    padding: 1px 1px;
+    align-content: center;
+    margin-top: 2rem;
+    border-top: 1px solid #dee2e6;
   }
 }
 .home .walk .walk-text {
