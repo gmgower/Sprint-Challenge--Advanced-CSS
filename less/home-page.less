@@ -9,9 +9,9 @@
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -27,7 +27,9 @@
     }
 
     @media @phone {
-      .sky, .launch {
+
+      .sky,
+      .launch {
         display: none;
       }
 
@@ -53,11 +55,22 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex();
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+    }
 
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 90%;
+        margin: 0 auto;
+        order: 2;
+        margin-top: 2rem;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -69,13 +82,25 @@
 
       .btn {
         .custom-signup-btn();
+
+        @media @phone {
+          width: 98%;
+          margin: 0 auto 2rem;
+          border-radius: .5rem;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        width: 90%;
+        margin: 0 auto;
+        order: 1;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -83,4 +108,6 @@
       }
     }
   }
-}// home
+}
+
+// home
