@@ -3,8 +3,15 @@
 .home {
 
     // < !-- Start of Intro Section -->
-
   .intro {
+
+    @media @phone {
+      .main-header-img {
+        img {
+          width: 100%;
+        }
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -116,6 +123,7 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+        margin-top: 2rem;
       }
     }
   }
