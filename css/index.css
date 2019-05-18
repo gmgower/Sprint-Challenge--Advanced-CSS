@@ -164,6 +164,7 @@ p {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
+  border-bottom: 4px solid #F1F1F1;
 }
 .nav-section h1 {
   display: flex;
