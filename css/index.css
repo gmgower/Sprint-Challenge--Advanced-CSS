@@ -163,6 +163,7 @@ p {
 .nav-section {
   display: flex;
   flex-direction: column;
+  background-color: #F6F6F6;
 }
 .nav-section h1 {
   display: flex;
