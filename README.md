@@ -46,7 +46,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. How would you describe preprocessing to someone new to CSS?
 
-     Preprocessing is language/syntax that extends CSS that's get compiled into regular CSS. Its benefits are cleaner code with reusability and readability.
+     Preprocessing is a new language/syntax that extends CSS that's get compiled into regular CSS. Its benefits are cleaner code with reusability and readability.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
