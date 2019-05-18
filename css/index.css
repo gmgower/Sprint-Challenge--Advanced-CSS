@@ -170,6 +170,7 @@ p {
 .nav-section {
   display: flex;
   flex-direction: column;
+  padding-top: 2rem;
   background-color: #F6F6F6;
   border-bottom: 4px solid #F1F1F1;
 }
@@ -197,6 +198,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .main-header-img img {
+  border-radius: 5px;
 }
 @media (max-width: 500px) {
   .home .intro .main-header-img img {
@@ -290,7 +294,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    width: 98%;
+    width: 100%;
     margin: 0 auto 2rem;
     border-radius: 0.5rem;
   }
