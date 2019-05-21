@@ -1,1 +1,24 @@
 // Navigation code here
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  background-color: @nav-bg;
+  border-bottom: 4px solid @nav-border;
+
+  h1 {
+    .flex();
+    font-size: 4rem;
+  }
+
+  nav {
+    .flex();
+  }
+
+  a {
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: @nav-font;
+  }
+}

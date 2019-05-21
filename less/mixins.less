@@ -1,1 +1,28 @@
 // Mixins Here
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.bdrRad20 {
+  border-radius: 20px
+}
+
+// Parametric Mixins
+.custom-signup-btn(@width: 12rem, @bgColor: @btn-bg-color) {
+  display: block;
+  padding-top: 1rem;
+  text-align: center;
+  cursor: pointer;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 1.2rem;
+  width: @width;
+  background-color: @bgColor;
+  color: @sea-shell;
+
+  &:hover {
+    background-color: @waterloo;
+    color: @ebony-clay;
+  }
+}

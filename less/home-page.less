@@ -2,18 +2,33 @@
 
 .home {
 
+    // < !-- Start of Intro Section -->
   .intro {
+    .main-header-img {
+      img {
+          border-radius: 5px;
+      }
+    }
+
+    @media @phone {
+      .main-header-img {
+        img {
+          width: 100%;
+        }
+      }
+    }
 
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
+    // < !-- End of Intro Section -->
 
+  //  < !-- Start of Space Image Section -->
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -22,11 +37,25 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .bdrRad20();
       height: 100%;
     }
-  }
 
+    @media @phone {
+
+      .sky,
+      .launch {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+    // < !-- End of Space Image Section -->
+
+  //  < !-- Start of Visit Planets Section -->
   .visit-planets {
     padding: 15px;
 
@@ -38,16 +67,33 @@
       margin-top: 13px;
     }
   }
+  //  < !-- End of Visit Planets Section -->
 
+  //  < !-- Start of Walk Section -->
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex();
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      padding: 1px 1px;
+      align-content: center;
+      margin-top: 2rem;
+      border-top: 1px solid @main-border-color;
+    }
 
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 90%;
+        margin: 0 auto;
+        order: 2;
+        margin-top: 2rem;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +104,34 @@
       }
 
       .btn {
+        .custom-signup-btn();
+
+        @media @phone {
+          width: 100%;
+          margin: 0 auto 2rem;
+          border-radius: .5rem;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        width: 90%;
+        margin: 0 auto;
+        order: 1;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        margin-top: 2rem;
       }
     }
   }
+  //  < !-- End of Walk Section -->
+
 }// home
